@@ -1,9 +1,18 @@
 ﻿<metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+  <remove-node path="/api/package[@name!='com.opentok.android']"/>
+
+  <add-node path="/api/package[@name='com.opentok.android']/class[@name='Stream']">
+    <method name="compareTo" return="int" abstract="false" native="false" synchronized="false" static="false" final="false"
+            deprecated="not deprecated" visibility="public">
+      <parameter name="o" type="java.lang.Object" />
+    </method>
+  </add-node>
+
+  <add-node path="/api/package[@name='com.opentok.android']/class[@name='Connection']">
+    <method name="compareTo" return="int" abstract="false" native="false" synchronized="false" static="false" final="false"
+            deprecated="not deprecated" visibility="public">
+      <parameter name="o" type="java.lang.Object" />
+    </method>
+  </add-node>
 </metadata>
+  
